@@ -135,15 +135,17 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    
 }
 .card{
     padding: 25px 20px;
-    border: 2px solid rgb(152, 146, 146);
-    border-radius: 40px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 4px;
 }
 .card p{
     max-width: 300px;
+}
+.grey{
+    color: #888;
 }
 footer{
     width: 100%;
@@ -152,3 +154,119 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 480px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .header-links{
+        margin: 2vh 2vw;
+    }
+    .header-links li{
+        font-size: 3vw;
+        margin: 0 3vw;
+        
+    }
+    .name{
+        font-size: 3vw;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        margin: 0;
+    }
+    .main-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .container2{
+        display: block;
+        padding: 0;
+    }
+    .container2 p{
+        font-size: 3vw;
+        color: #222;
+    
+    }
+    .container2 h1{
+        margin-bottom: 20px;
+        font-size: 10vw;
+        text-align: center;
+        font-weight: 600;
+    }
+
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 50px 0;
+        display: block;
+    }
+    .Projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .sub-title{
+        font-size: 5vw;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .project-list{
+        padding: 0 5%;
+    }
+    .project-list li{
+        margin: 5vw 0;
+        
+    }
+    .project-list li a{
+        width: 100%;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .left{
+        margin-left: 5%;
+    }
+    .main-container{
+        margin-bottom: 50px;
+        padding: 0 1%;
+    }
+    .education p{
+        font-size: 4vw;
+    }
+    .education>p{
+        margin-bottom: 10px;
+    }
+    .courses{
+        margin-left: 10px;
+    }
+    .courses li{
+        margin: 10px 0;
+    }
+    .reviews{
+        flex-direction: column;
+    }
+    .card{
+        margin-bottom: 50px;
+    }
+
+  }
